@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PVS - REGISTER</title>
+    <link rel="stylesheet" href="styles/register.css" />
+    <script src="js/register.js" defer></script>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div>
+        <a href="../src/index.html"><img class="logoImg" src="imgs/logo.png" id="img1" alt="logo" /></a>
+        <a href="../src/index.html"><img class="logoImg2" src="imgs/logo2.png" id="img2" alt="logo em branco" /></a>
+      </div>
+      <div class="userSection">
+        <p id="userNotAuth">USUÁRIO NÃO AUTENTICADO</p>
+        <a class="userLink" id="userImg"><img src="imgs/userImg.png" alt="imagem fictícia do usúario" /></a>
+      </div>
+    </header>
+    <div class="menu">
+      <ul class="menuList">
+        <li class="workWUs">
+          <a href="" class="disabled-link">TRABALHE CONOSCO</a>
+        </li>
+        <li>
+          <a href="" class="disabled-link">CONTATO</a>
+        </li>
+        <li>
+          <a href="login.html" class="loginLink" id="loginLink">LOGIN</a>
+        </li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="siteOptions">
+      <input type="radio" id="normalSite" name="siteOption" for="normalSite" />
+      <label for="normal" class="siteOptionLabel">Normal</label>
+      <input type="radio" id="customSite" name="siteOption" for="customSite" />
+      <label for="custom" class="siteOptionLabel">Custom</label>
+    </div>
+    <div class="registerForm">
+      <form action="" class="formContent">
+        <span id="message" class="message"></span>
+        <p class="campTitle">Digite seu nome</p>
+        <div>
+          <input id="nameInput" type="text" class="textInput" />
+        </div>
+        <div class="dateAndEmail">
+          <div class="dateGrid">
+            <p class="campTitle">Data nascimento</p>
+            <input id="dateInput" type="date" class="textInput" />
+          </div>
+          <div class="emailGrid">
+            <p class="campTitle">Digite seu email</p>
+            <input id="emailInput" type="text" class="textInput" />
+          </div>
+        </div>
+        <p class="campTitle">Qual o seu gênero?</p>
+        <div class="genreOptions">
+          <div>
+            <input type="radio" name="genRd" id="genRd1" class="" value="M" />
+            <label for="genRd1">Homem</label>
+          </div>
+          <div>
+            <input type="radio" name="genRd" id="genRd2" value="F" />
+            <label for="genRd2">Mulher</label>
+          </div>
+          <div>
+            <input type="radio" name="genRd" id="genRd3" value="S" />
+            <label for="genRd3">Prefiro não informar</label>
+          </div>
+        </div>
+        <p class="campTitle">Quais serviços você tem interesse?</p>
+        <div class="genreOptions">
+          <div>
+            <input type="checkbox" id="servicesChkBx1" />
+            <label for="servicesChkBx1">ERP</label>
+          </div>
+          <div>
+            <input type="checkbox" id="servicesChkBx2" />
+            <label for="servicesChkBx2">Site comercial</label>
+          </div>
+          <div>
+            <input type="checkbox" id="servicesChkBx3" />
+            <label for="servicesChkBx3">Outros</label>
+          </div>
+        </div>
+        <p class="campTitle">Escolha uma senha</p>
+        <div>
+          <input id="passwordInput" type="password" class="textInput" />
+        </div>
+        <p class="campTitle">Repita a senha</p>
+        <div>
+          <input id="passwordConfirmInput" type="password" class="textInput" />
+        </div>
+        <div class="sendContent">
+          <button type="submit" id="sendBtn" class="sendBtn">Registrar</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footerText">&copy2024 PVS - <span>PEDRO VIRISSIMO SCARELLI</span></div>
+    </footer>
+  </body>
+</html>

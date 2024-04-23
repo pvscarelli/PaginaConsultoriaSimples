@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: white;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logoImg {
+  width: 120px;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 80px;
+}
+
+.notVisible {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.userLink {
+  padding-left: 25px;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.loginLink {
+  color: white;
+}
+
+.loginLink2 {
+  color: white;
+  padding-left: 21px;
+}
+
+.disabled-link {
+  pointer-events: none;
+  color: gray;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  transform: translateX(-30%);
+  font-weight: bold;
+}
+
+.submenu li {
+  padding-top: 5px;
+}
+
+.submenu a {
+  margin-right: 0px;
+}
+
+.menuList li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.siteOptions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.siteOptionLabel {
+  padding-right: 30px;
+  padding-left: 8px;
+}
+
+.customSite {
+  background-color: #f5f5f5;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+}
+
+.customInput input {
+  background-color: gray;
+}
+
+.sendBtn2 {
+  font-family: "Courier New", Courier, monospace;
+  padding: 8px 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+.sendBtn2:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.loginLink2 {
+  color: black;
+}
+
+.logoImg2 {
+  display: none;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.errorMessage {
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #a94442;
+}
+
+.successMessage {
+  background-color: #dff0d8;
+  border: 1px solid #d0e9c6;
+  color: #3c763d;
+}
+
+.registerForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 286px);
+}
+
+.textInput {
+  width: 100%;
+  height: 24px;
+}
+
+.campTitle {
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.dateAndEmail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.emailGrid {
+  grid-column: span 2;
+}
+
+.genreOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sendContent {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.sendBtn {
+  padding: 8px 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+}
+
+.sendBtn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .userSection {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .formContent {
+    width: 310px;
+  }
+  .userSection {
+    padding-right: 20px;
+  }
+
+  .logoImg {
+    padding: 20px 30px;
+  }
+
+  .workWUs {
+    max-width: 90px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .formContent {
+    width: 240px;
+  }
+
+  .workWUs {
+    padding-left: 30px;
+  }
+
+  .dateAndEmail {
+    grid-template-columns: 1fr; /* Define uma única coluna */
+  }
+
+  .emailGrid {
+    grid-column: auto; /* Volta ao comportamento padrão de uma única coluna */
+  }
+
+  .footerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  .footerText span {
+    font-size: 15px;
+  }
+
+  .logoImg {
+    width: 100px;
+    padding: 20px 15px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .workWUs {
+    max-width: 90px;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+}

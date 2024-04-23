@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <title>PVS - LOGIN</title>
+    <script src="js/login.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../src/index.html"><img class="logoImg" src="imgs/logo.png" alt="" /></a>
+      <div class="userSection">
+        <p id="userNotAuth">USUÁRIO NÃO AUTENTICADO</p>
+        <a href="register.html" class="userLink" id="userImg"><img src="imgs/userImg.png" alt="imagem fictícia do usúario" /></a>
+      </div>
+    </header>
+    <div class="menu">
+      <ul class="menuList">
+        <li class="workWUs">
+          <a href="" class="disabled-link">TRABALHE CONOSCO</a>
+        </li>
+        <li>
+          <a href="" class="disabled-link">CONTATO</a>
+        </li>
+        <li>
+          <a href="login.html" class="loginLink" id="loginLink">LOGIN</a>
+          <ul class="submenu">
+            <li><a href="register.html" class="loginLink" id="register">CADASTRE-SE</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="loginContent">
+      <div class="login">
+        <span id="message" class="message"></span>
+
+        <h3 class="loginTitle" id="loginTitle">Entre na sua conta PVS</h3>
+        <form id="loginForm">
+          <div class="usernameContent">
+            <span class="spanTitle">E-mail</span>
+            <input type="text" id="loginInput" />
+          </div>
+          <div class="passwordContent">
+            <span class="spanTitle">Senha</span>
+            <input type="password" id="passwordInput" />
+          </div>
+          <div class="authContent">
+            <button class="authBtn" id="authBtn">Autenticar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footerText">&copy2024 PVS - <span>PEDRO VIRISSIMO SCARELLI</span></div>
+    </footer>
+  </body>
+</html>

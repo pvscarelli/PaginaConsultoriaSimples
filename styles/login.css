@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: white;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logoImg {
+  width: 120px;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 80px;
+}
+
+.notVisible {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.userLink {
+  padding-left: 25px;
+}
+.menuList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+.menu a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.loginLink {
+  color: white;
+}
+.loginLink2 {
+  color: white;
+  padding-left: 21px;
+}
+.disabled-link {
+  pointer-events: none;
+  color: gray;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  transform: translateX(-30%);
+  font-weight: bold;
+}
+
+.submenu li {
+  padding-top: 5px;
+}
+
+.submenu a {
+  margin-right: 0px;
+}
+
+.menuList li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+.errorMessage {
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #a94442;
+}
+
+.successMessage {
+  background-color: #dff0d8;
+  border: 1px solid #d0e9c6;
+  color: #3c763d;
+}
+
+.loginContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 218px);
+}
+
+.login {
+  width: 400px;
+}
+
+.usernameContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.passwordContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.spanTitle {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.loginTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.authBtn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+}
+
+.authBtn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.authContent {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .userSection {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .login {
+    width: 250px;
+  }
+
+  .userSection {
+    padding-right: 20px;
+  }
+
+  .logoImg {
+    padding: 20px 30px;
+  }
+
+  .workWUs {
+    max-width: 90px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    font-size: 15px;
+  }
+  .logoImg {
+    width: 100px;
+    padding: 20px 15px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .workWUs {
+    max-width: 90px;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+}
